@@ -1,0 +1,5 @@
+<h2>Savings Account Holders Names</h2>
+
+{% for x in object_list %}
+    <a href="/show{{ x.acno }}/" >{{ x.name }}</a><br><br>
+{% endfor %}
